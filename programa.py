@@ -23,3 +23,11 @@ while opcion!=0:
         nombrescultor= input("Escriba el nombre del compositor que desea buscar: ")
         ListarApellido(db,escultor)
         opcion=Menu()
+ #Opción 6 del menú:
+    elif opcion ==6:
+        print (Mostrahermandad(db))
+        hermandad = input("¿Cuál es la hermandad que desea actualizar?: ")
+        Actualizarhermandad(db,nombre_hermandad)
+        opcion=Menu()
+       
+ 
