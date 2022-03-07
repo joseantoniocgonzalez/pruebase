@@ -1,3 +1,13 @@
+CREATE DATABASE cofradias;
+CREATE USER 'hermandades'@'%' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON cofradias.* to 'hermandades'@'%';
+FLUSH PRIVILEGES;
+exit
+USE cofradias
+
+
+
+
 create table hermandad(
     nombre_hermandad varchar(20),
     dia_salida date,
